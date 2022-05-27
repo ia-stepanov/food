@@ -127,7 +127,7 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
   modal.addEventListener('click', (e) => {
-    if (e.target === modal || e.target.getAttribute('data-close' == '')) {
+    if (e.target === modal || e.target.getAttribute('data-close') == '') {
       closeModal();
     }
   });
@@ -284,7 +284,7 @@ window.addEventListener('DOMContentLoaded', () => {
     thanksModal.classList.add('modal__dialog');
     thanksModal.innerHTML = `
       <div class="modal__content">
-        <div class="modal__close" data-close>×</div>
+        <div data-close class="modal__close">&times;</div>
         <div class="modal__title">${message}</div>
       </div>
     `;
